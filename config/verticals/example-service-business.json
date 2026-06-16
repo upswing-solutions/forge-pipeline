@@ -1,0 +1,54 @@
+{
+  "_comment": "Example vertical config for the FORGE pipeline. A vertical describes a target market the pipeline discovers prospects in and builds spec websites for. Copy this file, rename it, and adjust the fields to target your own market. JSON does not allow inline comments, so explanatory notes are placed in '_comment' fields throughout.",
+
+  "vertical": "local-service-business",
+  "display_name": "Local Service Business",
+  "description": "Generic example vertical. Targets owner-operated local service businesses (the kind a homeowner hires for a one-off job) that have weak or no web presence. Replace with a real trade or category to run the pipeline for a specific market.",
+
+  "geography": {
+    "_comment": "Where the pipeline looks for prospects. A neutral example. Use a real city/region plus a radius when running for real.",
+    "city": "Anytown",
+    "region": "USA",
+    "radius_miles": 25
+  },
+
+  "discovery": {
+    "_comment": "How Phase A (one-time market discovery) finds candidate businesses. search_terms and sources are illustrative and intentionally generic; swap in queries and data sources appropriate to your market. target_count is the size of the prospect reservoir to build before the FORGE pipeline starts pulling from it.",
+    "search_terms": [
+      "local service business near me",
+      "{{vertical}} {{city}}",
+      "best {{vertical}} in {{city}}"
+    ],
+    "sources": [
+      "public-business-directory",
+      "map-search",
+      "review-platform"
+    ],
+    "target_count": 40
+  },
+
+  "scoring_weights": {
+    "_comment": "Relative importance of each of the six 0-10 scoring dimensions when ranking prospects. Weights sum to 1.0. NOTE: website_quality is REVERSED -- a business with NO website scores 10 (high opportunity) and a polished modern site scores 0. So a high website_quality weight pushes site-less businesses to the top.",
+    "website_quality": 0.30,
+    "social_proof": 0.20,
+    "contact_confidence": 0.15,
+    "market_opportunity": 0.15,
+    "business_maturity": 0.10,
+    "competitive_position": 0.10
+  },
+
+  "tiers": {
+    "_comment": "Maps a prospect's weighted composite score (0-10) to a priority tier. Tier 3 is the best prospect and gets built first. Thresholds are the minimum composite score to land in each tier; anything below tier_1's minimum is left unscored/skipped.",
+    "tier_3": { "min_score": 7.5, "label": "high priority -- no site + strong reviews" },
+    "tier_2": { "min_score": 5.5, "label": "medium priority -- weak site, decent reviews" },
+    "tier_1": { "min_score": 3.5, "label": "low priority -- some opportunity" }
+  },
+
+  "site": {
+    "_comment": "Vertical-neutral hints handed to the copy and build stages. These steer tone and visual direction without dictating exact structure. Keep them as direction, not prescription.",
+    "tone": "trustworthy, plain-spoken, locally rooted",
+    "primary_cta": "Call for a free quote",
+    "must_have_sections": ["hero", "services", "about", "reviews", "contact-form"],
+    "design_direction": "clean and modern, photo-forward, easy to read on a phone, one clear call to action above the fold"
+  }
+}

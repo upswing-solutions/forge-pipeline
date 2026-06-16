@@ -1,0 +1,5 @@
+# BARD (Outreach Agent)
+
+BARD is the outreach agent in the reach stage of the pipeline. It renders locked, per-persona message templates with real prospect data, audits every draft against a strict voice and policy checklist (no em dashes, no marketing jargon, no price in the first touch, character caps, the collaborative-invitation ask), and hands finished drafts to the dashboard for a human to approve and send. It never dispatches messages and never invents customer data.
+
+This is a **sanitized reference template** published for the methodology only. The proprietary persona library (`personas/`) and the verbatim locked message copy have been removed, along with the operator's identity, prices, plan names, channel links, and the specific service vertical. What remains is the teachable craft: the merge-field-and-audit process, the per-variant content boundaries, the cadence discipline, the banned-vocabulary list, and the collaborative-invitation framework. Supply your own persona templates in `personas/` to run it.

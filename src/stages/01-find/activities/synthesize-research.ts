@@ -10,7 +10,7 @@ export interface SynthesisResult {
 }
 
 /** Map a 0–10 average to a 1–3 tier (higher score = better prospect). */
-function tierFor(scoring: Scoring): Tier {
+export function tierFor(scoring: Scoring): Tier {
   const avg =
     (scoring.website_quality +
       scoring.social_proof +

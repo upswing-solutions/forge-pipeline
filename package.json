@@ -10,6 +10,7 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
+    "test": "jest",
     "worker": "ts-node --transpile-only --require dotenv/config src/workers/worker.ts",
     "start": "ts-node --require dotenv/config src/client.ts",
     "temporal": "temporal server start-dev"
@@ -24,8 +25,11 @@
     "pg": "^8.13.0"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^20.14.0",
     "@types/pg": "^8.11.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.11",
     "ts-node": "^10.9.0",
     "typescript": "^5.6.0"
   }

@@ -1,5 +1,7 @@
 # FORGE Pipeline
 
+![CI](https://github.com/upswing-solutions/forge-pipeline/actions/workflows/ci.yml/badge.svg)
+
 A durable, agentic pipeline that discovers local-service-business prospects, builds each one a spec marketing website with an LLM agent, runs outreach, and onboards paying clients — orchestrated end to end with [Temporal.io](https://temporal.io).
 
 ## What it is
@@ -95,3 +97,6 @@ and the suite on every push and pull request.
 ## License
 
 MIT. See [`LICENSE`](LICENSE).
+
+---
+Built as an architecture reference by Sage Dutra. Portfolio: https://sage.upswingfast.com

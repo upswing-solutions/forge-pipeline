@@ -188,7 +188,7 @@ If a header genuinely needs context, write a separate `Subhead direction:` line 
 Review counts and star ratings are visual trust signals. The builder renders them as review-badge style stat elements. They never appear in prose anywhere.
 
 **Never write:**
-- "With over 100 five-star reviews..."
+- "Trusted by homeowners across the county..."
 - "Our 4.6-star average..."
 - "Trusted by 1,800+ homeowners..."
 - "Hundreds of happy customers agree..."

@@ -80,9 +80,17 @@ The orchestration core is real and runs locally. Everything that would touch a p
 | Postgres access, artifact store, status updates | Real |
 | LLM runners (`claude-max.ts`, `gemini.ts`) | Real (need a `claude` CLI / API key to actually call out) |
 | Agent template → workspace pattern | Real |
+| Unit tests (tiering, HTML audit, DNC suppression) | Real — a representative subset, run in CI |
 | Scraper, research, email, payments, CDN, blob, notify, messaging, deploy | **Stubbed** — see [`src/shared/adapters/README.md`](src/shared/adapters/README.md) |
 
 Going live with any one service means implementing its interface and swapping a single export in `src/shared/adapters/index.ts`. Nothing else in the pipeline changes.
+
+## Testing
+
+`npm test` runs the Jest suite. This reference ships a representative subset that
+covers the pure, deterministic logic: prospect tier scoring, the HTML technical
+audit, and the fail-safe do-not-contact suppression check. CI runs the typecheck
+and the suite on every push and pull request.
 
 ## License
 

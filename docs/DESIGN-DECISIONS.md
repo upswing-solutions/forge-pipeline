@@ -61,3 +61,20 @@ Every external integration sits behind a one-method interface with a determinist
 The entire pipeline is one TypeScript project with one worker process. Each stage is a folder of activities. There is no inter-service network layer. For a single-operator pipeline this gives all the organizational benefit of services with none of the deployment, network-hop, or debugging overhead.
 
 **Rule:** don't reach for microservices until something actually forces a process boundary. Folders and a single worker scale a long way.
+
+## 11. Take automation out when it stops earning its place
+
+An earlier version of OUTFIT scored each built site with an automated numeric QA
+gate and looped on it: if the score missed a threshold, the site went back for an
+automated revision and was rescored. In practice that loop churned. It produced
+repeated revisions that homogenized output toward a safe average without reliably
+improving what actually mattered, and it added latency and cost for little gain.
+So the gate was removed. What replaced it is single-pass generation from a strong
+brief, the technical and visual audits kept as informational, non-gating second
+opinions, and exactly one real gate: a human approval signal. The audits inform
+the operator; they never block a build.
+
+**Rule:** measure whether an automated quality step actually improves the outcome
+it gates. If it does not, delete it and move the judgment to a human or to a
+cheaper informational check. Knowing when to remove an automated step is as much
+a part of the design as knowing when to add one.

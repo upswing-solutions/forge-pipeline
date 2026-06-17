@@ -197,7 +197,7 @@ Step sequence in prose:
 4. **Disqualification check** filters out do-not-contact / closed / existing-client prospects before any expensive creative work.
 5. **HATTORI** (capable model) writes the copy package and a design brief; status → `copy_written`.
 6. **HANZO** (capable model) reads the brief and copy, picks a reference template, and writes a complete `index.html` from scratch; status → `site_built`.
-7. **QA** (technical audit + visual QA, cheap LLM) runs in parallel and is informational — failures are logged but never gate the workflow; status → `qa_complete`.
+7. **QA** (technical audit + visual QA, cheap LLM) runs in parallel and is informational — failures are logged but never gate the workflow; status → `qa_complete`. QA runs as an informational second opinion, never a gate; see Design Decision 11 for why the earlier automated gate was removed.
 8. The workflow **waits on the `approve` signal** (14-day timeout). Approve → deploy + record learning (`approved`). Timeout → archive.
 
 REACH then runs as its own workflow: **BARD** drafts outreach, the operator sends it (`messaging`/`email` adapters), and the workflow waits on a payment signal (with its own timeout) before handing off to GROW.

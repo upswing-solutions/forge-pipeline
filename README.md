@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/brand/banner.png" alt="FORGE — find a local business, forge its site, win the deal, autonomously" width="100%">
+</p>
+
 # FORGE Pipeline
 
 ![CI](https://github.com/upswing-solutions/forge-pipeline/actions/workflows/ci.yml/badge.svg)
@@ -11,6 +15,12 @@ FORGE is a five-stage customer-lifecycle pipeline — **F**ind, **O**utfit, **R*
 > ⚠️ **This is an architecture reference, not a turnkey product.** It compiles and reads like production code, and the Temporal / Postgres / LLM core is real. But every outward-facing integration (scraping, research, email, payments, CDN, blob storage, notifications, messaging, deploy) sits behind a **stub adapter** that returns deterministic fake data. You will not get a real website built, a real email sent, or a real charge made until you implement those adapters yourself. See [Status / what's stubbed](#status--whats-stubbed).
 
 ## Pipeline at a glance
+
+<p align="center">
+  <img src="assets/brand/pipeline.svg" alt="FORGE stages: Find, Outfit (human gate), Reach, Grow, and Embark (future)" width="100%">
+</p>
+
+The detailed flow, including the per-stage sub-steps and the approval gate:
 
 ```mermaid
 flowchart LR

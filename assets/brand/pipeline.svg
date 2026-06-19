@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="300" viewBox="0 0 1240 300" font-family="'Chakra Petch','Saira',system-ui,-apple-system,'Segoe UI',sans-serif" role="img" aria-label="FORGE pipeline: find, outfit, reach, grow, embark">
+  <defs>
+    <linearGradient id="fg-ember" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#CE6B26"/><stop offset="0.5" stop-color="#F0833A"/><stop offset="1" stop-color="#F6A871"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1240" height="300" rx="18" fill="#14171C"/>
+  <text x="40" y="46" fill="#7C8694" font-size="12" letter-spacing="3" font-family="'JetBrains Mono',ui-monospace,monospace">FIND A LOCAL BUSINESS &#183; FORGE ITS SITE &#183; WIN THE DEAL</text>
+
+  <!-- arrows -->
+  <g stroke="#525B67" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M272 125 l8 6 -8 6"/>
+    <path d="M504 125 l8 6 -8 6"/>
+    <path d="M736 125 l8 6 -8 6"/>
+    <path d="M968 125 l8 6 -8 6" opacity="0.5"/>
+  </g>
+
+  <!-- 1. FIND -->
+  <g transform="translate(126 95) scale(0.75)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="26" cy="13" r="2.6" fill="#F0833A" stroke="none"/>
+    <circle cx="40" cy="10" r="2.6" fill="#F0833A" stroke="none"/>
+    <circle cx="54" cy="13" r="2.6" fill="#F0833A" stroke="none"/>
+    <path d="M14,22 L66,22 L46,44 L46,62 L34,68 L34,44 Z" stroke="#F0833A"/>
+  </g>
+  <text x="156" y="200" text-anchor="middle" fill="#EDF1F5" font-size="15" font-weight="700" letter-spacing="1.5">FIND</text>
+  <text x="156" y="222" text-anchor="middle" fill="#7C8694" font-size="10.5" font-family="'JetBrains Mono',ui-monospace,monospace" letter-spacing="0.4">Research &#8594; dossier</text>
+
+  <!-- 2. OUTFIT (forge core · human gate) -->
+  <g transform="translate(358 95) scale(0.75)" fill="none" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M26.15,32 L53.85,32 L40,56 Z" fill="rgba(240,131,58,0.18)" stroke="none"/>
+    <path d="M40,8 L67.7,24 L67.7,56 L40,72 L12.3,56 L12.3,24 Z" stroke="url(#fg-ember)"/>
+    <path d="M40,8 L12.3,56 L67.7,56 Z" stroke="#F0833A"/>
+    <path d="M26.15,32 L53.85,32 L40,56 Z" stroke="#F6A871"/>
+    <path d="M12.3,24 L26.15,32 M67.7,24 L53.85,32 M40,72 L40,56" stroke="#F0833A"/>
+  </g>
+  <text x="388" y="200" text-anchor="middle" fill="#EDF1F5" font-size="15" font-weight="700" letter-spacing="1.5">OUTFIT</text>
+  <text x="388" y="222" text-anchor="middle" fill="#7C8694" font-size="10.5" font-family="'JetBrains Mono',ui-monospace,monospace" letter-spacing="0.4">Build &#183; human gate</text>
+
+  <!-- 3. REACH -->
+  <g transform="translate(590 95) scale(0.75)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="22" cy="40" r="5" fill="#F6A871" stroke="none"/>
+    <path d="M36,28 A 18 18 0 0 1 36,52" stroke="#F0833A"/>
+    <path d="M46,20 A 28 28 0 0 1 46,60" stroke="#F0833A"/>
+    <path d="M56,12 A 38 38 0 0 1 56,68" stroke="#F0833A"/>
+  </g>
+  <text x="620" y="200" text-anchor="middle" fill="#EDF1F5" font-size="15" font-weight="700" letter-spacing="1.5">REACH</text>
+  <text x="620" y="222" text-anchor="middle" fill="#7C8694" font-size="10.5" font-family="'JetBrains Mono',ui-monospace,monospace" letter-spacing="0.4">Outreach</text>
+
+  <!-- 4. GROW -->
+  <g transform="translate(822 95) scale(0.75)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14,40 H30 M30,40 L48,26 M30,40 L48,54 M48,26 L64,18 M48,26 L64,34 M48,54 L64,46 M48,54 L64,62" stroke="#F0833A"/>
+    <circle cx="14" cy="40" r="2.8" fill="#F0833A" stroke="none"/>
+    <circle cx="64" cy="18" r="2.8" fill="#F0833A" stroke="none"/>
+    <circle cx="64" cy="34" r="2.8" fill="#F0833A" stroke="none"/>
+    <circle cx="64" cy="46" r="2.8" fill="#F0833A" stroke="none"/>
+    <circle cx="64" cy="62" r="2.8" fill="#F0833A" stroke="none"/>
+  </g>
+  <text x="852" y="200" text-anchor="middle" fill="#EDF1F5" font-size="15" font-weight="700" letter-spacing="1.5">GROW</text>
+  <text x="852" y="222" text-anchor="middle" fill="#7C8694" font-size="10.5" font-family="'JetBrains Mono',ui-monospace,monospace" letter-spacing="0.4">Onboard &amp; retain</text>
+
+  <!-- 5. EMBARK (future · dim) -->
+  <g transform="translate(1054 95) scale(0.75)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+    <path d="M20,36 A 21 21 0 0 1 56,27" stroke="#7C8694"/>
+    <path d="M56,27 L48.5,25.2 M56,27 L54.6,33.4" stroke="#7C8694"/>
+    <path d="M60,44 A 21 21 0 0 1 24,53" stroke="#7C8694"/>
+    <path d="M24,53 L31.5,54.8 M24,53 L25.4,46.6" stroke="#7C8694"/>
+  </g>
+  <text x="1084" y="200" text-anchor="middle" fill="#7C8694" font-size="15" font-weight="700" letter-spacing="1.5">EMBARK</text>
+  <text x="1084" y="222" text-anchor="middle" fill="#525B67" font-size="10.5" font-family="'JetBrains Mono',ui-monospace,monospace" letter-spacing="0.4">Future &#183; out of scope</text>
+
+  <rect x="40" y="262" width="1160" height="3" rx="1.5" fill="url(#fg-ember)" opacity="0.85"/>
+</svg>

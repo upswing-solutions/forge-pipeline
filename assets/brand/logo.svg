@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="FORGE">
+  <rect width="128" height="128" rx="28" fill="#14171C"/>
+  <g transform="translate(64 64) scale(0.9) translate(-40 -40)" fill="none" stroke-linejoin="round">
+    <path d="M26.15,32 L53.85,32 L40,56 Z" fill="rgba(240,131,58,0.18)" stroke="none"/>
+    <path d="M40,8 L67.7,24 L67.7,56 L40,72 L12.3,56 L12.3,24 Z" stroke="#F0833A" stroke-width="2"/>
+    <path d="M40,8 L12.3,56 L67.7,56 Z" stroke="#F0833A" stroke-width="2"/>
+    <path d="M26.15,32 L53.85,32 L40,56 Z" stroke="#F6A871" stroke-width="2"/>
+    <path d="M12.3,24 L26.15,32 M67.7,24 L53.85,32 M40,72 L40,56" stroke="#F0833A" stroke-width="2"/>
+  </g>
+</svg>

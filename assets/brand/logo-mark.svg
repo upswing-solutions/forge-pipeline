@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 80 80" fill="none" stroke-linejoin="round" role="img" aria-label="FORGE core mark">
+  <path d="M26.15,32 L53.85,32 L40,56 Z" fill="rgba(240,131,58,0.18)" stroke="none"/>
+  <path d="M40,8 L67.7,24 L67.7,56 L40,72 L12.3,56 L12.3,24 Z" stroke="#F0833A" stroke-width="2"/>
+  <path d="M40,8 L12.3,56 L67.7,56 Z" stroke="#F0833A" stroke-width="2"/>
+  <path d="M26.15,32 L53.85,32 L40,56 Z" stroke="#F6A871" stroke-width="2"/>
+  <path d="M12.3,24 L26.15,32 M67.7,24 L53.85,32 M40,72 L40,56" stroke="#F0833A" stroke-width="2"/>
+</svg>
